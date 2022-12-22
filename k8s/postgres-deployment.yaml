@@ -1,4 +1,4 @@
-apiVersion: aps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres-deployment
@@ -8,7 +8,7 @@ spec:
     matchLabels:
       component: postgres
   template:
-    metdata:
+    metadata:
       labels:
         component: postgres
     spec:
